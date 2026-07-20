@@ -44,7 +44,27 @@ a:hover { color: #005fa3; }
 }
 
 .hero-section {
-  background: linear-gradient(180deg, #ffffff 0%, #f4f7fb 100%);
+  background: #16213e;
+}
+
+.btn-contact {
+  color: white;
+  border-color: white;
+}
+
+.btn-contact:hover {
+  color: #16213e;
+  background: white;
+  border-color: white;
+}
+
+.main-text {
+  color: white;
+}
+
+.eyebrow,
+.hero-text {
+  color: white;
 }
 
 .profile-photo {
@@ -61,7 +81,8 @@ a:hover { color: #005fa3; }
   text-transform: uppercase;
   letter-spacing: .12em;
   font-size: .82rem;
-  color: var(--muted);
+  /* color: var(--muted); */
+  color: white;
   margin-bottom: 1rem;
 }
 
@@ -70,6 +91,10 @@ a:hover { color: #005fa3; }
   max-width: 760px;
   margin-inline: auto;
   color: var(--muted);
+}
+
+.hero-text{
+  color: white;
 }
 
 .section-title {
@@ -144,6 +169,54 @@ a:hover { color: #005fa3; }
   flex-direction: column;
   gap: 1.5rem;
 }
+
+
+
+.contact-box {
+  max-width: 620px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.contact-title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  gap: .35rem;
+  padding: 1rem 0;
+  border-top: 1px solid #eef2f7;
+}
+
+.contact-item:first-of-type {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.contact-label {
+  font-size: .85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: #5f6b7a;
+}
+
+.contact-item a {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #1b6ec2;
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  color: #1861ac;
+  text-decoration: underline;
+}
+
+
 
 @media (max-width: 991px) {
   .project-image-large {
