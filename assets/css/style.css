@@ -1,0 +1,152 @@
+:root {
+  --bg: #f8f9fb;
+  --surface: #ffffff;
+  --surface-alt: #eef2f7;
+  --text: #1b1f24;
+  --muted: #5f6b7a;
+  --primary: #1b6ec2;
+  --primary-dark: #1861ac;
+  --border: #dbe2ea;
+  --shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+  --radius: 18px;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
+
+img { max-width: 100%; display: block; }
+a { color: #0077cc; }
+a:hover { color: #005fa3; }
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+}
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+  z-index: 1000;
+  background: #fff;
+  padding: .75rem 1rem;
+  border-radius: .5rem;
+  box-shadow: var(--shadow);
+}
+
+.site-header .navbar-brand {
+  word-break: break-word;
+}
+
+.hero-section {
+  background: linear-gradient(180deg, #ffffff 0%, #f4f7fb 100%);
+}
+
+.profile-photo {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  margin-inline: auto;
+  border: 4px solid #fff;
+  box-shadow: var(--shadow);
+  background: #e9ecef;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  font-size: .82rem;
+  color: var(--muted);
+  margin-bottom: 1rem;
+}
+
+.hero-text,
+.section-text {
+  max-width: 760px;
+  margin-inline: auto;
+  color: var(--muted);
+}
+
+.section-title {
+  font-weight: 800;
+}
+
+.section-alt {
+  background: var(--surface-alt);
+}
+
+.badge {
+  font-size: .92rem;
+  padding: .65rem .8rem;
+}
+
+.project-full-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.project-image-large {
+  width: 100%;
+  height: 100%;
+  min-height: 320px;
+  object-fit: cover;
+  background: #dde4ec;
+}
+
+.project-content {
+  padding: 1.25rem;
+}
+
+.project-content-large {
+  padding: 1.5rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-description,
+.project-content-large p {
+  color: var(--muted);
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin-top: 1rem;
+}
+
+.tech-pill {
+  background: #e9eef5;
+  color: #314154;
+  border-radius: 999px;
+  padding: .45rem .75rem;
+  font-size: .9rem;
+}
+
+.project-links {
+  display: flex;
+  gap: .75rem;
+  flex-wrap: wrap;
+  margin-top: 1.25rem;
+}
+
+.projects-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+@media (max-width: 991px) {
+  .project-image-large {
+    min-height: 240px;
+  }
+}
