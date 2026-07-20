@@ -122,7 +122,7 @@ a:hover { color: #005fa3; }
   width: 100%;
   height: 100%;
   min-height: 320px;
-  object-fit: cover;
+  object-fit: fill;
   background: #dde4ec;
 }
 
